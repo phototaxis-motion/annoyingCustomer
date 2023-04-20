@@ -15,10 +15,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - shell: bash
+          cache: "npm"
+      - run: yarn; node index.js
         env:
           OPENAI_API_KEY: ${{ secrets.openai_api_key }}
           DISCORD_TOKEN: ${{ secrets.discord_token }}
           DISCORD_CHANNEL_ID: ${{ secrets.discord_channel_id }}
-        run: |
-          node index.js
