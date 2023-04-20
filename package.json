@@ -1,0 +1,15 @@
+{
+  "name": "annoyingcustomer",
+  "version": "1.0.0",
+  "description": "token: MTA3NTY2NDUzNDUwNjg0MDA3NA.GFc0RY.l3E2P73bb-Sn0vpgzVNIZ8OgT-oo0fqktdut8c",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/core": "^0.5.2"
+  }
+}
