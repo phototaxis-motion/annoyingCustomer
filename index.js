@@ -26,9 +26,9 @@ try {
       {
         role: "user",
         content:
-          "隨機給我點10字以內的難題，不用限制我時間跟做法，要求個圖片視覺的意象。",
+          "隨機給我點10字以內的難題，不用限制我時間跟做法，要求個單一腳色的圖片視覺的意象。",
       },
-      { role: "assistant", content: "我想要一個圖片，裡面" },
+      { role: "assistant", content: "我想要一個角色圖片，裡面" },
     ],
   });
   questionString = completion.data.choices[0].message.content;
@@ -38,6 +38,6 @@ try {
 
 // createMessage
 const message = await api.channels.createMessage(channelId, {
-  content: "阿對了，我今天有個需求，我想要一個意境圖，裡面: " + questionString,
+  content: "阿對了，我今天有個需求，我想要一個意境圖，裡面" + questionString,
   tts: false,
 });
