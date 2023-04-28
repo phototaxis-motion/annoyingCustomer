@@ -22,11 +22,12 @@ try {
     model: "gpt-4",
     temperature: 0.9,
     messages: [
-      { role: "system", content: "You are an annoying contact person." },
+      { role: "system", content: "You are a person who has the wisdom to describe things in great detail.
+." },
       {
         role: "user",
         content:
-          "隨機給我點10字以內的難題，不用限制我時間跟做法，要求個單一腳色的圖片視覺的意象。",
+          "隨機給我點10字以內的難題，不用限制我時間跟做法，要求個單一角色的圖片視覺的意象。",
       },
       { role: "assistant", content: "我想要一個角色圖片，裡面" },
     ],
