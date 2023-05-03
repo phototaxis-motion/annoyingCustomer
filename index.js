@@ -22,8 +22,7 @@ try {
     model: "gpt-4",
     temperature: 0.9,
     messages: [
-      { role: "system", content: "You are a person who has the wisdom to describe things in great detail.
-." },
+      { role: "system", content: "You are a person who has the wisdom to describe things in great detail.." },
       {
         role: "user",
         content:
