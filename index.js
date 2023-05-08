@@ -20,15 +20,15 @@ let questionString = "";
 try {
   const completion = await openai.createChatCompletion({
     model: "gpt-4",
-    temperature: 0,
+    temperature: 1,
     messages: [
-      { role: "system", content: "You are a person who has the wisdom to describe things in great detail.." },
+      { role: "system", content: "You are a person who has the wisdom to describe things." },
       {
         role: "user",
         content:
-          "隨機給我點20字以內的題目，不用限制我時間跟做法，要求個單一角色的圖片視覺的意象。",
+          "今天日期是:" + new Date().toISOString() + "，請隨機給我題目，要求單一角色的圖片視覺的意象，20字以內。",
       },
-      { role: "assistant", content: "我想要一個角色圖片，裡面" },
+      { role: "assistant", content: "我想要一個角色，" },
     ],
   });
   questionString = completion.data.choices[0].message.content;
